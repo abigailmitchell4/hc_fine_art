@@ -15,12 +15,12 @@ const Meet = () => {
           <p className='meet-p'>
             For inquiries and commissions please contact Haylee at: 
           </p>
-          <p className='meet-p'>
+          <p className='meet-p email'>
             hayleecanonico@gmail.com 
           </p>
-          <p className='meet-p'>
-            or send a message below
-          </p>
+          <button className='contact-btn meet-btn'>
+            <a href="mailto:hayleecanonico@gmail.com?Subject=Canonico Fine Art Inquiry" target="_top">Contact</a>
+          </button>
         </div>
       </div>
     </>

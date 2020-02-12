@@ -75,13 +75,16 @@ const NavBar = () => {
           </NavLink>
         </nav>
         <nav className='nav-right'>
-          <NavLink
+          {/* <NavLink
             className='link contact-link'
             exact
             to="/contact"
             activeStyle={styles.active}>
             Contact
-          </NavLink>
+          </NavLink> */}
+          <button className='contact-btn'>
+            <a href="mailto:hayleecanonico@gmail.com?Subject=Canonico Fine Art Inquiry" target="_top">Contact</a>
+          </button>
           <div className='link'>
             <a href="https://www.instagram.com/haycanart/">
             <svg className='ig-logo'version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">

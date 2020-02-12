@@ -61,25 +61,74 @@ body {
 }
 
 .slide {
-  width: 50vw;
   height: 80vh;
+  margin: 1rem;
 }
 .one {
-  background: #efdefe;
+  // background: #efdefe;
   margin-left: 30%;
 }
-.two {
-  background: #a3f3d3;
-}
-.three {
-  background: #0bbaa0;
-}
-.four {
-  background: #00dfdf;
+// .two {
+//   background: #a3f3d3;
+// }
+// .three {
+//   background: #0bbaa0;
+// }
+// .four {
+//   background: #00dfdf;
+// }
+.print {
+  display: flex;
+  max-height: 40rem;
 }
 
 .heading {
   letter-spacing: 2px;
   font-size: 3rem;
   font-family: var(--main-font-family);
+}
+
+/// CONTACT BTN ///
+.contact-btn {
+  border-style: solid;
+  border-width: 2px;
+  padding: 5px 10px;
+  border-color: inherit;
+  letter-spacing: 2px;
+  background-color: transparent;
+  text-transform: uppercase;
+
+  a, a:visited {
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+.contact-btn:hover {
+  background-color: #f44336;
+  border-color: #f44336;
+
+  a {
+    color: #fff;
+  }
+}
+
+.meet-btn {
+  font-size: 1.5rem;
+  border-color:  #f44336;
+
+  a, a:visited {
+    color: #f44336;
+    font-family: var(--main-font-family);
+    text-transform: none;
+  }
+}
+
+// TEMPORARY CONTENT ///
+.temp-h1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
 }

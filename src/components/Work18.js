@@ -3,7 +3,7 @@ import React from 'react'
 const Work18 = () => {
   return (
     <>
-      <h1>Work18</h1>
+      <h1 className='temp-h1'>Work 2018</h1>
     </>
   )
 }
