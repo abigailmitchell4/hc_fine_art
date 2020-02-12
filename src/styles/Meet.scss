@@ -3,14 +3,32 @@
   width: 60%;
   position: relative;
   display: flex;
+
+  @include respond(tab-small) {
+    width: 80%;
+  }
+
+  @include respond(phone) {
+    top: 5rem;
+    flex-direction: column;
+  }
 }
 .meet-heading {
   margin: 1rem 2rem 1rem 0;
   text-align: right;
-  color: var(--color-1)
+  color: var(--color-1);
+
+  @include respond(phone) {
+    width: 200px;
+    text-align: left;
+  }
+
+  @include respond(tab-port) {
+    margin: 1rem;
+  }
 }
 .p-meet-container {
-  margin: 1rem;
+  margin: 0 1rem;
   letter-spacing: 1.5px;
 }
 .meet-p {
@@ -19,3 +37,4 @@
 .email {
   font-weight: 700;
 }
+
