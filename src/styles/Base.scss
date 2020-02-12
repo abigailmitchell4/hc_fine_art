@@ -1,0 +1,85 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --main-font-family: 'shrikhand', sans-serif;
+  --color-1 :#f44336;
+  --color-2: #f179ff;
+}
+
+// overflow-wrap: break-word;
+//   word-wrap: break-word; 
+//   word-break: break-word;
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 600px) { @content };
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 900px) { @content };
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 1200px) { @content };
+  }
+  @if $breakpoint == big-desk {
+    @media (max-width: 1800px) { @content };
+  }
+}
+
+body {
+  min-height: 100vh;
+}
+
+////////////////////////
+// HORIZONTAL SCROLL //
+
+::-webkit-scrollbar {
+  display:none;
+}
+
+.outer-wrapper {
+  width: 90vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.wrapper {
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+
+.slide {
+  width: 50vw;
+  height: 80vh;
+}
+.one {
+  background: #efdefe;
+  margin-left: 30%;
+}
+.two {
+  background: #a3f3d3;
+}
+.three {
+  background: #0bbaa0;
+}
+.four {
+  background: #00dfdf;
+}
+
+.heading {
+  letter-spacing: 2px;
+  font-size: 3rem;
+  font-family: var(--main-font-family);
+}
