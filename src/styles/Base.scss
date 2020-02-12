@@ -15,7 +15,7 @@
 //   word-break: break-word;
 
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone-small{
+  @if $breakpoint == phone-small {
     @media screen and (max-width: 400px) { @content };
   }
   @if $breakpoint == phone {
@@ -74,15 +74,6 @@ body {
   // background: #efdefe;
   margin-left: 30%;
 }
-// .two {
-//   background: #a3f3d3;
-// }
-// .three {
-//   background: #0bbaa0;
-// }
-// .four {
-//   background: #00dfdf;
-// }
 .print {
   display: flex;
   max-height: 40rem;
