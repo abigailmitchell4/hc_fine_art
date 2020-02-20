@@ -8,6 +8,23 @@
   border-style: solid;
   padding: 15px;
   text-transform: uppercase;
+
+  @include respond(tab-port) {
+    left: 50%;
+    top: 28%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+  }
+
+  @include respond(phone) {
+    width: 200px;
+    top: 25%;
+    transform: translate(-50%, -50%);
+  }
+
+  @include respond(phone-small) {
+    top: 20%;
+  }
 }
 
 .main-name::before{
@@ -39,17 +56,3 @@
   }
 }
 
-.main-name {
-  @include respond(tab-port) {
-    left: 50%;
-    top: 33%;
-    transform: translate(-50%, -50%);
-    width: 250px;
-  }
-
-  @include respond(phone) {
-    width: 200px;
-    top: 25%;
-    transform: translate(-50%, -50%);
-  }
-}

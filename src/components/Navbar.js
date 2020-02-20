@@ -1,5 +1,5 @@
-import React, { useState, } from "react";
-import { NavLink, } from "react-router-dom";
+import React, { useState, } from "react"
+import { NavLink, } from "react-router-dom"
 
 const NavBar = () => {
   const [toggle, setToggle] = useState(false)
@@ -75,13 +75,6 @@ const NavBar = () => {
           </NavLink>
         </nav>
         <nav className='nav-right'>
-          {/* <NavLink
-            className='link contact-link'
-            exact
-            to="/contact"
-            activeStyle={styles.active}>
-            Contact
-          </NavLink> */}
           <button className='contact-btn'>
             <a href="mailto:hayleecanonico@gmail.com?Subject=Canonico Fine Art Inquiry" target="_top">Contact</a>
           </button>
