@@ -1,5 +1,6 @@
 import React, { useState, } from "react"
 import { NavLink, } from "react-router-dom"
+import logo from '../logo/logo.png'
 
 const NavBar = () => {
   const [toggle, setToggle] = useState(false)
@@ -14,7 +15,7 @@ const NavBar = () => {
           exact
           to="/"
           activeStyle={styles.active}>
-          Home
+          <img src={logo} className='hc-logo' alt='hc-logo'/>
         </NavLink>
         <div 
           className='work-link link'

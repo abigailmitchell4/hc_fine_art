@@ -4,15 +4,41 @@
 }
 
 .show-img {
-  width: 400px;
+  width: 450px;
+
+  @include respond(phone) {
+    width: 350px;
+  }
+  @include respond(phone-small) {
+    width: 300px;
+  }
 }
 
+.show-img-long {
+  width: 650px;
+}
 
 ///////////////////////// 
 ////// PRINT SHOW ///////
 
 .print-info {
-  height: 300px;
+  height: 650px;
   display: flex;
-  align-self: flex-end;
+  // align-self: flex-end;
+
+  div {
+    margin-top: 8rem;
+  }
+
+  @include respond(tab-small) {
+    height: fit-content; 
+
+    div {
+      margin-top: 0;
+    }
+  }
+}
+
+.p-meta {
+  letter-spacing: 2px;
 }

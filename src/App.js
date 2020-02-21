@@ -3,6 +3,7 @@ import { Switch, Route, } from 'react-router-dom'
 import Contact from './components/Contact'
 import HayleeCV from './components/HayleeCV'
 import Home from './components/Home'
+import Show18 from './components/Show18'
 import Show19 from './components/Show19'
 import Meet from './components/Meet'
 import Navbar from './components/Navbar'
@@ -24,6 +25,7 @@ const App = () => (
       <Route exact path="/artist_statement" component={Statement} />
       <Route exact path="/cv" component={HayleeCV} />
       <Route exact path="/contact" component={Contact} />
+      <Route exact path="/2018/:id" component={Show18} />
       <Route exact path="/2019/:id" component={Show19} />
     </Switch>
   </>

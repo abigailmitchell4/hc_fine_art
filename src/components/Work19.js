@@ -53,8 +53,6 @@ const Work19 = () => {
         <h1 className='margin-header work-header'>2019</h1>
         <div className='flex-c margin-container'>
           <div className='flex'>
-              {/* <div className='img-container'> */}
-              {/* <img className='print-img' src={yellow_1}/> */}
               {images.map((e,i) => (
                 <Link 
                 to={{
@@ -72,86 +70,10 @@ const Work19 = () => {
                   image={e.image}
                   id={i}
                   />
-                   {/* <img className='print-img' src={e.image}/> */}
                 </Link>  
               )
               )}
-              {/* </div>  */}
-              
-            {/* <div className='img-container'>
-              <img className='print-img' src={yellow_2}/>
-            </div>
-            <div className='img-container'>
-              <img className='print-img' src={yellow_3}/>
-            </div>
-            <div className='img-container'>
-              <img className='print-img' src={yellow_4}/>
-            </div> */}
           </div>
-          {/* <div className='flex'>
-            <div className='img-container'>
-              <img className='print-img' src={white_red1}/>
-            </div>
-            <div className='img-container'>
-              <img className='print-img' src={white_red2}/>
-            </div>
-            <div className='img-container'>
-              <img className='print-img' src={white_red3}/>
-            </div>
-            <div className='img-container'>
-              <img className='print-img' src={white_red4}/>
-            </div>
-          </div>
-          <div className='flex'>
-            <div className='img-container'>
-              <img className='print-img' src={white_red5}/>
-            </div>
-            <div className='img-container'>
-              <img className='print-img' src={pink_red1}/>
-            </div>
-            <div className='img-container'>
-              <img className='print-img' src={pink_red2}/>
-            </div>
-            <div className='img-container'>
-              <img className='print-img' src={blue_white1}/>
-            </div>
-          </div>
-          <div className='flex'>
-            <div className='img-container'>
-              <img className='print-img' src={hands_blue1}/>
-            </div>
-            <div className='img-container'>
-              <img className='print-img' src={pink_blue1}/>
-            </div>
-            <div className='img-container'>
-              <img className='print-img' src={blue_white1}/>
-            </div>
-            <div className='img-container'>
-              <img className='print-img' src={pink_green1}/>
-            </div>
-          </div>
-          <div className='flex'>
-            <div className='img-container'>
-              <img className='print-img' src={pink_green1}/>
-            </div>
-            <div className='img-container'>
-              <img className='print-img' src={pink_green2}/>
-            </div>
-            <div className='img-container'>
-              <img className='print-img' src={pink_green3}/>
-            </div>
-            <div className='img-container'>
-              <img className='print-img' src={pink_green4}/>
-            </div>
-          </div>
-          <div className='flex'>
-            <div className='img-container'>
-             <img className='print-img' src={hands_yellow}/>
-            </div>
-            <div className='img-container'>
-              <img className='print-img' src={ghost_yellow}/>
-            </div>
-          </div> */}
         </div>
       </div>
     </>
