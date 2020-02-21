@@ -22,20 +22,12 @@
 ////// PRINT SHOW ///////
 
 .print-info {
-  height: 650px;
+  height: 350px;
   display: flex;
   // align-self: flex-end;
 
-  div {
-    margin-top: 8rem;
-  }
-
   @include respond(tab-small) {
     height: fit-content; 
-
-    div {
-      margin-top: 0;
-    }
   }
 }
 
